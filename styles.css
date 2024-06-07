@@ -87,29 +87,7 @@ body {
     position: relative;
   }
 }
-@media(min-width: 998px){
-  html{
-      font-size: 50%;
-      .content {
-          margin-top: 6.25rem;
-          margin-left: auto;
-          margin-right: auto;    
-          background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
-          backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
-          border-radius: 2rem;
-          border:10px solid rgba(255, 255, 255, 0.18);
-          box-shadow: 0 .5rem 2rem 0 rgba(0, 0, 0, 0.37) ;
-          height:auto;
-          width: 50%;
-  }
-  .socialIcons a{
-    font-size: 50%;
-  }
-  .footerBottom{
-    font-size: 50%;
-  }
-  }}
+
 /* Content Styles */
 .content {
   font-family: 'fantasy1';
