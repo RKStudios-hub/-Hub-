@@ -53,6 +53,12 @@ body, html {
         height: 100%;
     }
 }
+@media(max-width: 998px){
+  #background-video {
+    width: auto;
+    height: 100%;
+}
+}
 
 .content {
     font-family: 'fantasy1';
