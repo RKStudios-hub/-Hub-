@@ -54,25 +54,56 @@ body {
 
 @media (min-aspect-ratio: 16/9) {
   #background-video {
-      width: 100%;
-      height: auto;
+    width: 100%;
+    height: auto;
   }
 }
 
 @media (max-aspect-ratio: 16/9) {
   #background-video {
-      width: auto;
-      height: 100%;
+    width: auto;
+    height: 100%;
   }
 }
 
-@media(max-width: 998px) {
+/* Adjustments for smaller screens */
+@media (max-width: 999px) {
+  .video-container {
+    width: 100%;
+    height: auto;
+    position: relative; /* Allow video to scroll with content */
+  }
+
   #background-video {
-      width: 50%;
-      height: auto;
+    width: 100%;
+    height: auto;
+    position: relative;
+    transform: none;
+  }
+
+  /* Ensure video does not obscure other content */
+  .content {
+    padding-top: 50%; /* Make space for the video */
+    position: relative;
   }
 }
-
+@media(max-width: 998px){
+  html{
+      font-size: 50%;
+      .content {
+          margin-top: 6.25rem;
+          margin-left: auto;
+          margin-right: auto;    
+          background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border-radius: 2rem;
+          border:10px solid rgba(255, 255, 255, 0.18);
+          box-shadow: 0 .5rem 2rem 0 rgba(0, 0, 0, 0.37) ;
+          height:auto;
+          width: 50%;
+  }
+  }}
 /* Content Styles */
 .content {
   font-family: 'fantasy1';
