@@ -164,24 +164,58 @@ aside {
     
     padding: 10px 30px 20px;
     }
-    .socialIcons a{
-    text-decoration: none;
-    align-items: center; 
-    padding: 100px;
-    margin: 10px;
-    border-radius: 50%;
-    }
-    .socialIcons a i{
-    font-size: 2em;
-    color: white;
-    opacity: 0.9;
-    }
-    /* Hover Effects on Social Media Icons*/
-    .socialIcons a:hover i{
-    transform: translateY(5px);
-    color: rgb(31, 71, 98);
-    transition: 0.5s;
-    }
+   /* Center and space the social icons */
+.footerContainer {
+  display: flex;
+  justify-content: center; /* Centers the social icons horizontally */
+  align-items: center;
+  flex-direction: column; /* Aligns the items in a column */
+  padding: 20px;
+  background: #141414; /* Example background color */
+  color: white;
+  margin-bottom: 30px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center; /* Centers the icons */
+  gap: 20px; /* Adds 15px space between the icons */
+}
+
+.socialIcons a {
+  text-decoration: none;
+  margin: 0; /* Reset margin */
+  padding: 10px; /* Adjust padding for a better look */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e2e2e; /* Example background color for the icons */
+  transition: transform 0.5s;
+}
+
+.socialIcons a i {
+  font-size: 1.8em;
+  color: white;
+  opacity: 0.9;
+}
+
+.socialIcons a:hover i {
+  font-size: 1.5em;
+  color: rgb(121, 121, 121);
+  transition: 0.5s;
+}
+
+.footerBottom {
+  margin-top: 20px; /* Space between the icons and the footer text */
+  text-align: center;
+  font-size: 1em;
+}
+
+.desginer {
+  font-weight: bold;
+}
+
     .footerNav{
     margin: 0px 0;
     }
